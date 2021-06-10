@@ -13,7 +13,7 @@ func main() {
 
     d := []int{1,2}
     e := [][]int{d,d}
-    d[0] = 3
+    e[0][0] = 3
     fmt.Printf("%v\n",e)
 }
 

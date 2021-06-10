@@ -11,8 +11,8 @@ fn main() {
     f(&mut a);
     println!("{:?}",a);
 
-    let mut d = [1,2];
-    let e = [&d,&d];
-//    d[0] = 3; // <- Error
+    let d = [1,2];
+    let mut e = [d,d];
+    e[0][0] = 3;
     println!("{:?}",e);
 }

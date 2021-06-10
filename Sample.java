@@ -12,10 +12,11 @@ class Sample {
 
         int[] d = {1,2};
         int[][] e = {d,d};
-        d[0] = 3;
+        e[0][0] = 3;
         for(var i : e) {
-            System.out.println(Arrays.toString(i));
+            System.out.print(Arrays.toString(i));
         }
+        System.out.println();
     }
 
     static void f(int[] c) {

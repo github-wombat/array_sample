@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 
     int d[] = { 1, 2 };
     int* e[] = { d, d };
-    d[0] = 3;
+    e[0][0] = 3;
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 2; j++) {
             printf("%d ", e[i][j]);

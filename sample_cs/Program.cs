@@ -9,17 +9,18 @@ namespace sample_cs
             int[] a = {1,2,3};
             int[] b = a;
             b[0] = 4;
-            Console.WriteLine(string.Join(",",a));
+            Console.WriteLine("[{0}]",string.Join(",",a));
 
             func(a);
-            Console.WriteLine(string.Join(",",a));
+            Console.WriteLine("[{0}]",string.Join(",",a));
 
             int[] d = {1,2};
             int[][] e = {d,d};
-            d[0] = 3;
+            e[0][0] = 3;
             foreach(int[] i in e) {
-                Console.WriteLine(string.Join(",",i));
+                Console.Write("[{0}] ",string.Join(",",i));
             }
+            Console.WriteLine();
         }
 
         static void func(int[] c)

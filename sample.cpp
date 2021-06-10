@@ -34,8 +34,8 @@ int main(int argc, char* argv[])
     std::cout << std::endl;
 
     std::array<int, 2> d { 1, 2 };
-    auto e = { d, d };
-    d[0] = 3;
+    std::array<std::array<int, 2>, 2> e = { d, d };
+    e[0][0] = 3;
     for (auto i : e) {
         for (auto j : i) {
             std::cout << j << " ";

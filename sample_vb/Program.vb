@@ -5,18 +5,18 @@ Module Program
         Dim a() As Integer = {1,2,3}
         Dim b = a
         b(0) = 4
-        Console.WriteLine(String.Join(",",a))
+        Console.WriteLine("[{0}]",String.Join(",",a))
 
         f(a)
-        Console.WriteLine(String.Join(",",a))
+        Console.WriteLine("[{0}]",String.Join(",",a))
 
         Dim d() As Integer = {1,2}
         Dim e() = {d,d}
-        d(0) = 3
+        e(0)(0) = 3
         For Each i in e
-            Console.WriteLine(String.Join(",",i))
+            Console.Write("[{0}] ",String.Join(",",i))
         Next
-
+        Console.WriteLine()
     End Sub
 
     Sub f(c As Integer())
