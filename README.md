@@ -41,6 +41,15 @@ $ ./sample
 5 2 3
 3 2 3 2
 ```
+- [sample_struct.c](sample_struct.c)
+```
+$ gcc -o sample sample_struct.c
+$ ./sample
+1 2 3
+3 2 3
+1 2 3
+5 2 3
+```
 
 ## C++
 - https://ja.wikipedia.org/wiki/C%2B%2B
@@ -281,4 +290,3 @@ $ lua sample.lua
 3 2
 3 2
 ```
-
