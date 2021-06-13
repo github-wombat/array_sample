@@ -270,3 +270,15 @@ Array
 
 )
 ```
+
+# Lua
+- https://ja.wikipedia.org/wiki/Lua
+- [sample.lua](sample.lua)
+```
+$ lua sample.lua
+4 2 3
+5 2 3
+3 2
+3 2
+```
+
